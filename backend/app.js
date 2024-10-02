@@ -8,7 +8,7 @@ const connectDB = require("./config/db");
 const cors = require("cors");
 
 // Middlewares
-app.use(cors())
+app.use(cors({ origin: "https://frontend-2yy1.onrender.com/signup" }));
 app.use(express.json());
 
 connectDB();
